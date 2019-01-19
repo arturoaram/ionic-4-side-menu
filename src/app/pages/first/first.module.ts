@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { FirstPage } from './first.page';
+import { SharedComponentsModule } from 'src/app/components/shared-components.module';
 
 const routes: Routes = [
   {
@@ -19,8 +20,9 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    SharedComponentsModule 
   ],
   declarations: [FirstPage]
 })
-export class FirstPageModule {}
+export class FirstPageModule { }
