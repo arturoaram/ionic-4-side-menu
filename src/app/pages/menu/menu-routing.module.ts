@@ -23,7 +23,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/menu/(menucontent:first)',
+    redirectTo: '/menu/(menucontent:second)',
   }
 ];
 

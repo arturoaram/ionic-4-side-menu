@@ -13,6 +13,6 @@ export class HomePage {
   }
 
   openMenu(){
-    this.router.navigate(['/menu/(menucontent:first)'])
+    this.router.navigate(['/menu/menucontent:second'])
   }
 }
