@@ -6,24 +6,22 @@ import { SecondPage } from '../second/second.page';
 
 const routes: Routes = [
   {
-    path: 'menu',
+    path: '',
     component: MenuPage,
     children: [
       {
         path: 'first',
-        outlet: 'menucontent',
         component: FirstPage
       },
       {
         path: 'second',
-        outlet: 'menucontent',
         component: SecondPage
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/menu/(menucontent:second)',
+    redirectTo: '/menu/second',
   }
 ];
 

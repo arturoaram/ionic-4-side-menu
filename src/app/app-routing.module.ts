@@ -9,8 +9,8 @@ const routes: Routes = [
     canActivate: [AuthGuardService]
   },
   { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
+  { path: 'menu', loadChildren: './pages/menu/menu.module#MenuPageModule' },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: '', loadChildren: './pages/menu/menu.module#MenuPageModule' }
 ];
 
 @NgModule({
