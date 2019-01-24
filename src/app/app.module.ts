@@ -18,7 +18,8 @@ export function jwtOptionsFactory(storage) {
     tokenGetter: () => {
       return storage.get('key');
     },
-    whitelistedDomains: ['https://supervision-staging.herokuapp.com']
+    whitelistedDomains: ['supervision-staging.herokuapp.com'],
+    authScheme: 'JWT '
   };
 }
 
@@ -32,7 +33,6 @@ export function jwtOptionsFactory(storage) {
     HttpClientModule,
     IonicStorageModule.forRoot(),
     JwtModule.forRoot({
-      config: { authScheme: 'JWT ' },
       jwtOptionsProvider: {
         provide: JWT_OPTIONS,
         useFactory: jwtOptionsFactory,
