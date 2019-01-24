@@ -13,11 +13,11 @@ export class MenuPage implements OnInit {
   pages = [
     {
       title: 'First Page',
-      url: '/menu/(menucontent:first)'
+      url: '/menu/first'
     },
     {
       title: 'Second Page',
-      url: '/menu/(menucontent:second)'
+      url: '/menu/second'
     }
   ];
 
